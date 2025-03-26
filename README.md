@@ -12,7 +12,7 @@ public int AddInstance(Rendering.RayTracingAABBsInstanceConfig config, Matrix4x4
 
 Note that when using this function, Unity will automatically enable RAY_TRACING_PROCEDURAL_GEOMETRY shader keyword.
 
-The acceleration structure in this project is manually managed. This can be set in Ray Tracing Settings from Volume settings. [ManualRTASManager.cs](Assets/Scripts/ManualRTASManager.cs) is where the procedural sculpture is generated out of AABBs and added to the acceleration structure. Regular scene geometries can be added to the acceleration structure using [RayTracingAccelerationStructure.CullInstances](https://docs.unity3d.com/2023.1/Documentation/ScriptReference/Rendering.RayTracingAccelerationStructure.CullInstances.html) function.
+The acceleration structure in this project is manually managed. This can be set in Ray Tracing Settings from Volume settings. [ManualRTASManager.cs](Assets/Scripts/ManualRTASManager.cs) is where the procedural sculpture is generated out of AABBs and added to the acceleration structure. Regular scene geometries can be added to the acceleration structure using [RayTracingAccelerationStructure.CullInstances](https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rendering.RayTracingAccelerationStructure.CullInstances.html) function.
 
 Go to Game view and click on Play to generate the image. Intel Open Image Denoiser is used to remove the final noise.
 
