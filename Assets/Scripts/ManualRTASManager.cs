@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.HighDefinition;
 using UnityEngine.UI;
-using static ManualRTASManager;
 
 [ExecuteInEditMode]
 public class ManualRTASManager : MonoBehaviour
@@ -79,7 +78,7 @@ public class ManualRTASManager : MonoBehaviour
 
             try
             {
-                if (material != null)
+                if (material != null && aabbBuffer != null)
                 {
                     RayTracingAABBsInstanceConfig config = new RayTracingAABBsInstanceConfig();
 
@@ -132,11 +131,12 @@ public class ManualRTASManager : MonoBehaviour
         }
     }
 
-    private void OnEnable()
+    private void Start()
     {
-        GenerateInstanceMatrices(new Vector3(0, 0, 0), out matrices);
-
+        if (aabbBuffer == null)
         {
+            GenerateInstanceMatrices(new Vector3(0, 0, 0), out matrices);
+
             aabbBuffer = new GraphicsBuffer(GraphicsBuffer.Target.Structured, matrices.Count, 6 * sizeof(float));
 
             AABB[] aabbs = new AABB[matrices.Count];
@@ -154,6 +154,13 @@ public class ManualRTASManager : MonoBehaviour
             }
             aabbBuffer.SetData(aabbs);
         }
+    }
+
+    void OnDisable()
+    {
+        matrices.Clear();
+        rtas?.Dispose();
+        aabbBuffer?.Dispose();
     }
 
     void OnDestroy()
