@@ -24,4 +24,4 @@ Go to Game view and click on Play to generate the image. Intel Open Image Denois
 
 ## Resources
 * [DirectX Raytracing (DXR) specs](https://microsoft.github.io/DirectX-Specs/d3d/Raytracing.html)
-* [Unity Forum](https://forum.unity.com)
+* [Unity Discussions](https://discussions.unity.com/lists/graphics)
