@@ -1,4 +1,4 @@
-# RayTracingMeshInstancingHDRP
+# LitIntersectionShaderPathTracingHDRP
 Unity sample project using an intersection shader (i.e. procedural geometry, AABBs) in HDRP Path Tracing.
 
 <img src="Images/1.png" width="1920">
