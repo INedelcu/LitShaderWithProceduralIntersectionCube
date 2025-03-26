@@ -581,9 +581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205d3118a93556a4e9e7cf4c41f9c34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableInstancingToggle: {fileID: 0}
   fpsText: {fileID: 1307686588}
-  mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: 82035c04de1a8f34bb628527dedda99c, type: 2}
 --- !u!114 &479369985
 MonoBehaviour:
@@ -858,13 +856,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788038546}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.89894736, y: -0.05757225, z: -0.1366174, w: 0.4122072}
+  m_LocalRotation: {x: 0.74850446, y: -0.30260125, z: 0.34952965, w: 0.4753973}
   m_LocalPosition: {x: 3.732352, y: 2.906627, z: 18.731403}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 46.5, y: -154.8, z: -161.7}
+  m_LocalEulerAnglesHint: {x: 67.4, y: -217.8, z: -161.7}
 --- !u!1 &856504606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,8 +1043,6 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
@@ -1068,7 +1064,6 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -1166,7 +1161,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'FPS: 2'
+  m_Text: 'FPS: 1'
 --- !u!222 &1307686589
 CanvasRenderer:
   m_ObjectHideFlags: 0
